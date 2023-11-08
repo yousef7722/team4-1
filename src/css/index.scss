@@ -1,0 +1,168 @@
+// page 2
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background: #1e1e1e;
+  font-family: Open Sans, sans-serif !important;
+}
+
+/* nav-one */
+#nav-one {
+  background-color: black !important;
+  height: 33px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+/* main-start */
+.main-overlay {
+  height: 1600px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.fs-7 {
+  font-size: 0.9rem !important;
+}
+main.page2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 550px);
+  top: -550px;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(29, 29, 29, 0.9);
+}
+
+/* nabvar - two */
+.btn-primary {
+  background-color: transparent;
+  border: 2px solid #bf9b30;
+}
+
+.btn-primary:hover {
+  background-color: #bf9b30;
+  border: 2px solid #bf9b30;
+}
+.active {
+  border-bottom: 1px solid #bf9b30;
+  font-weight: bold;
+}
+/* section - 1 */
+.home-div-row {
+  background-color: #1a1919b3;
+}
+
+.about-right-div {
+  width: 45%;
+}
+
+.about-right {
+  position: relative;
+}
+
+.fa-clock {
+  padding-right: 5px;
+}
+.home-line {
+  height: 1px;
+  width: 60px;
+  background-color: #bf9b30;
+  margin: -12px 0px 8px 0px;
+}
+
+.left-div {
+  width: 93%;
+  position: relative;
+}
+
+.span-icon-about {
+  position: absolute;
+  right: 2px;
+  top: 0;
+}
+
+.FEATURED {
+  transform: rotate(270deg);
+  position: absolute;
+  margin: 145px 0px 0px -175px;
+  font-size: 35px;
+}
+
+.home-div-1 {
+  width: 2%;
+}
+
+.Card-Businss-Left-box115 {
+  position: relative;
+}
+
+.Card-Businss-Left-subtitle-line {
+  height: 1px;
+  width: 45px;
+  background-color: #bf9b30;
+  margin: -12px 0px 8px 0px;
+}
+
+.Businss-Left-icon-about {
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+}
+
+.Businss-Left-image {
+  width: 100%;
+  height: 90%;
+}
+
+.Businss-Left-icon {
+  color: gray;
+  font-size: 15px;
+}
+
+.Businss-Left-icon2 {
+  color: #bf9b30;
+  padding-top: 35px;
+  font-size: 30px;
+}
+
+/* card-text */
+.card {
+  background: rgb(0, 0, 0, 0.2);
+}
+
+.head-1 {
+  width: 16rem;
+  height: 50px;
+  background: rgb(0, 0, 0, 0.5);
+  margin: auto;
+  border-radius: 7px;
+}
+
+.list-1 {
+  list-style: none;
+}
+
+.list-1 li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* footer */
+
+.copyRights p {
+  font-size: 13px;
+}
+
+.copyRights i {
+  font-size: 30px;
+}
+//page 2
