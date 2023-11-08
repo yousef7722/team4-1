@@ -2,12 +2,12 @@ import React from "react";
 import seff_logo_transparent from "../media/seff_logo_transparent.png";
 import images from "../media/images.png";
 import Imageuploadbro from "../media/Image upload-bro.svg";
-import main_background from "../media/main_background.jpg";
+import main_background from "../media/main_background.jpg"; {/* صوره الخلفيه بتعملها امبورت الاول وتحطها تحت فالسورس*/}
 
 const Page2 = () => {
   return (
     <>
-      <img src={main_background} className="main-overlay" />
+      <img src={main_background} className="main-overlay" /> {/*الصوره اللى فالخلفيه*/}
       <div class="main position-relative">
         <main class="page2">
           {/* <!-- start section -1 --> */}

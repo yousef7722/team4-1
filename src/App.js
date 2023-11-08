@@ -11,6 +11,9 @@ const router = createBrowserRouter([
     element: <Layout1/>,
     children: [
       { index: true, element: <Page2/> },
+      // { path: "page link here", element: <Page3/> }, غير الاليمنت و الباث
+      // { path: "page link here",, element: <Page4/> }, غير الاليمنت و الباث
+      // { path: "page link here",, element: <Page4/> }, غير الاليمنت و الباث
     ]
   },
 ]);

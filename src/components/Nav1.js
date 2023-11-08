@@ -8,65 +8,61 @@ import seff_logo_transparent from "../media/seff_logo_transparent.png";
 
 const Nav1 = () => {
   return (
-    <>
-      <nav class="navbar navbar-expand-sm bg-black z-3" id="nav-one">
-        <div class="container-fluid container">
-          <div
-            class="collapse navbar-collapse flex-lg-row-reverse"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item ">
-                <a class="nav-link fs-6" href="#">
-                  LOGIN
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <Navbar expand="lg" className="bg-transparent z-3" data-bs-theme="dark">
-        <Container className="">
-          <Navbar.Brand href="#home">
-            <img
-              src={seff_logo_transparent}
-              width="100"
-              className="d-inline-block align-top me-4"
-              alt="React Bootstrap logo"
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="justify-content-between w-100 align-items-center ">
-              <Nav.Link className="fs-7 fw-normal  active" href="#home">Home</Nav.Link>
-              <Nav.Link className="fs-7 fw-normal  " href="#link">Link</Nav.Link>
-              <NavDropdown title="TECH" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link className="fs-7 fw-normal  " href="#link">BUSINESS</Nav.Link>
-              <Nav.Link className="fs-7 fw-normal  " href="#link">SECURITY</Nav.Link>
-              <Nav.Link className="fs-7 fw-normal  " href="#link">SPORTS</Nav.Link>
-              <Nav.Link className="fs-7 fw-normal  " href="#link">MEDICAL</Nav.Link>
-              <Nav.Link className="fs-7 fw-normal  " href="#link">STARTUPS</Nav.Link>
-              <Nav.Link className="fs-7 fw-normal  " href="#link">APPS</Nav.Link>
-              <button type="button" class="btn btn-primary ms-5 fs-7">
-                CONTACT US
-              </button>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </>
+    <Navbar expand="lg" className="bg-transparent z-3" data-bs-theme="dark">
+      <Container className="">
+        <Navbar.Brand href="#home">
+          <img
+            src={seff_logo_transparent}
+            width="100"
+            className="d-inline-block align-top me-4"
+            alt="React Bootstrap logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="justify-content-between w-100 align-items-center ">
+            <Nav.Link className="fs-7 fw-normal  active" href="#home">
+              Home
+            </Nav.Link>
+            <Nav.Link className="fs-7 fw-normal  " href="#link">
+              Link
+            </Nav.Link>
+            <NavDropdown title="TECH" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link className="fs-7 fw-normal  " href="#link">
+              BUSINESS
+            </Nav.Link>
+            <Nav.Link className="fs-7 fw-normal  " href="#link">
+              SECURITY
+            </Nav.Link>
+            <Nav.Link className="fs-7 fw-normal  " href="#link">
+              SPORTS
+            </Nav.Link>
+            <Nav.Link className="fs-7 fw-normal  " href="#link">
+              MEDICAL
+            </Nav.Link>
+            <Nav.Link className="fs-7 fw-normal  " href="#link">
+              STARTUPS
+            </Nav.Link>
+            <Nav.Link className="fs-7 fw-normal  " href="#link">
+              APPS
+            </Nav.Link>
+            <button type="button" class="btn btn-primary ms-5 fs-7">
+              CONTACT US
+            </button>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
