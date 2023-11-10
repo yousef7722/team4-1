@@ -5,10 +5,11 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 // images
 import seff_logo_transparent from "../media/seff_logo_transparent.png";
+import { Link } from "react-router-dom";
 
 const Nav1 = () => {
   return (
-    <Navbar expand="lg" className="bg-transparent z-3" data-bs-theme="dark">
+    <Navbar expand="lg" className="z-3 nav1" data-bs-theme="dark">
       <Container className="">
         <Navbar.Brand href="#home">
           <img
@@ -21,13 +22,13 @@ const Nav1 = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-between w-100 align-items-center ">
-            <Nav.Link className="fs-7 fw-normal  active" href="#home">
+            <Link className="px-1 fs-7 fw-normal active" to="/">
               Home
-            </Nav.Link>
-            <Nav.Link className="fs-7 fw-normal  " href="#link">
-              Link
-            </Nav.Link>
-            <NavDropdown title="TECH" id="basic-nav-dropdown">
+            </Link>
+            <Link className="px-1 fs-7 fw-normal  " href="#link">
+              ABOUT
+            </Link>
+            <NavDropdown className="fs-7 fw-normal" title="TECH" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -38,24 +39,27 @@ const Nav1 = () => {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link className="fs-7 fw-normal  " href="#link">
+            <Link className="px-1 fs-7 fw-normal  " to="Page3">
               BUSINESS
-            </Nav.Link>
-            <Nav.Link className="fs-7 fw-normal  " href="#link">
+            </Link>
+            <Link className="px-1 fs-7 fw-normal  " href="#link">
               SECURITY
-            </Nav.Link>
-            <Nav.Link className="fs-7 fw-normal  " href="#link">
+            </Link>
+            <Link className="px-1 fs-7 fw-normal  " href="#link">
               SPORTS
-            </Nav.Link>
-            <Nav.Link className="fs-7 fw-normal  " href="#link">
+            </Link>
+            <Link className="px-1 fs-7 fw-normal  " href="#link">
               MEDICAL
-            </Nav.Link>
-            <Nav.Link className="fs-7 fw-normal  " href="#link">
+            </Link>
+            <Link className="px-1 fs-7 fw-normal  " href="#link">
               STARTUPS
-            </Nav.Link>
-            <Nav.Link className="fs-7 fw-normal  " href="#link">
+            </Link>
+            <Link className="px-1 fs-7 fw-normal  " href="#link">
               APPS
-            </Nav.Link>
+            </Link>
+            <Link className="px-1 fs-7 fw-normal  " to="/page30">
+              JOBS
+            </Link>
             <button type="button" class="btn btn-primary ms-5 fs-7">
               CONTACT US
             </button>

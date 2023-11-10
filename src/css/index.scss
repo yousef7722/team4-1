@@ -5,25 +5,164 @@
   box-sizing: border-box;
   font-family: "Cairo", sans-serif;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
+.w-fit {
+  width: fit-content;
+}
 body {
   background: #1e1e1e;
   font-family: Open Sans, sans-serif !important;
 }
-
+.p-25 {
+  padding: 2.5rem;
+}
+.px-25 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+$yellow1: #bf9b30;
+//components
+.sec-title1 {
+  h2::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 1px;
+    background-color: $yellow1;
+  }
+}
+// login
+.login {
+  background: linear-gradient(
+    140deg,
+    rgba(49, 49, 49, 0.9019607843),
+    #191919 75%
+  );
+  min-height: 100vh;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.login .login-form {
+  background-color: rgba(0, 0, 0, 0.23);
+  max-width: 420px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  padding-bottom: 80px;
+}
+.login .login-form .login-logo {
+  display: block;
+  margin: -80px auto 40px;
+  width: 120px;
+  border-radius: 50%;
+}
+.login .login-form form {
+  width: 100%;
+}
+.login .login-form form .input-con {
+  position: relative;
+}
+.login .login-form form .input-con .login-icon {
+  position: absolute;
+  width: 23px;
+  left: 25px;
+  top: 50%;
+  translate: -50% -50%;
+  color: #bf9b30;
+}
+.login .login-form form .input-con .login-user {
+  border: 1px solid #bf9b30;
+  border-radius: 3px;
+  padding: 1px;
+  width: 18px;
+}
+.login .login-form form .input-con .password-icon {
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0.4;
+  top: 50%;
+  translate: -50% -50%;
+}
+.login .login-form form input {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-top: 1.2rem;
+  background-color: #414040;
+  color: white;
+  outline: none;
+  font-size: 1.05rem;
+  padding: 0.9rem;
+  font-weight: 700;
+  transition: 0.15s;
+  border: 1px solid transparent;
+}
+.login .login-form form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.login .login-form form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.login .login-form form input[type="number"]::-webkit-inner-spin-button,
+.login .login-form form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.login .login-form form input[type="number"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+.login .login-form form input:not([type="button"]) {
+  padding-left: 50px;
+}
+.login .login-form form input[type="button"] {
+  background-color: #bf9b30;
+  margin-top: 2.4rem;
+  transition: 0.15s;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.login .login-form form input[type="button"]:hover {
+  background-color: #e7bc3c;
+}
+.login .login-form form input:focus {
+  border: 1px solid rgba(191, 155, 48, 0.7);
+  box-shadow: 0 0 6px 0 #bf9b30;
+}
+// login end
 /* nav-one */
 #nav-one {
   background-color: black !important;
   height: 33px;
 }
-
 .nav-link {
   color: white !important;
 }
-
 /* main-start */
 .main-overlay {
-  height: 1600px;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
   width: 100%;
   top: 0;
@@ -31,23 +170,31 @@ body {
 .fs-7 {
   font-size: 0.9rem !important;
 }
-main.page2::after {
+.nobreak {
+  white-space: nowrap;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.landing-section::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: calc(100% + 550px);
-  top: -550px;
+  height: 100%;
+  top: 0;
   left: 0;
   z-index: 1;
-  background-color: rgba(29, 29, 29, 0.9);
+  background: linear-gradient(
+    rgba(29, 29, 29, 0.9) 33%,
+    rgba(29, 29, 29, 0.9) 33%,
+    rgba(29, 29, 29, 1)
+  );
 }
-
 /* nabvar - two */
 .btn-primary {
   background-color: transparent;
   border: 2px solid #bf9b30;
 }
-
 .btn-primary:hover {
   background-color: #bf9b30;
   border: 2px solid #bf9b30;
@@ -56,19 +203,16 @@ main.page2::after {
   border-bottom: 1px solid #bf9b30;
   font-weight: bold;
 }
+.nav1 {
+  background-color: rgba(29, 29, 29, 0.9);
+}
 /* section - 1 */
 .home-div-row {
   background-color: #1a1919b3;
 }
-
 .about-right-div {
   width: 45%;
 }
-
-.about-right {
-  position: relative;
-}
-
 .fa-clock {
   padding-right: 5px;
 }
@@ -78,67 +222,56 @@ main.page2::after {
   background-color: #bf9b30;
   margin: -12px 0px 8px 0px;
 }
-
-.left-div {
-  width: 93%;
-  position: relative;
+.w-45 {
+  width: 45%;
 }
-
 .span-icon-about {
   position: absolute;
   right: 2px;
   top: 0;
 }
-
-.FEATURED {
+.side-text {
   transform: rotate(270deg);
   position: absolute;
-  margin: 145px 0px 0px -175px;
-  font-size: 35px;
+  top: 50%;
+  left: calc(25px + 3%);
+  translate: -50% -50%;
+  h3 {
+    font-size: 35px;
+    white-space: nowrap;
+  }
 }
-
-.home-div-1 {
-  width: 2%;
-}
-
 .Card-Businss-Left-box115 {
   position: relative;
 }
-
 .Card-Businss-Left-subtitle-line {
   height: 1px;
   width: 45px;
   background-color: #bf9b30;
   margin: -12px 0px 8px 0px;
 }
-
 .Businss-Left-icon-about {
   position: absolute;
   right: 2px;
   bottom: 0;
 }
-
 .Businss-Left-image {
   width: 100%;
   height: 90%;
 }
-
 .Businss-Left-icon {
   color: gray;
   font-size: 15px;
 }
-
 .Businss-Left-icon2 {
   color: #bf9b30;
   padding-top: 35px;
   font-size: 30px;
 }
-
 /* card-text */
 .card {
   background: rgb(0, 0, 0, 0.2);
 }
-
 .head-1 {
   width: 16rem;
   height: 50px;
@@ -146,23 +279,69 @@ main.page2::after {
   margin: auto;
   border-radius: 7px;
 }
-
 .list-1 {
   list-style: none;
 }
-
 .list-1 li a {
   color: white;
   text-decoration: none;
 }
-
 /* footer */
-
 .copyRights p {
   font-size: 13px;
 }
-
 .copyRights i {
   font-size: 30px;
 }
 //page 2
+.news-item {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+.left-news-item {
+  .news-item {
+    .row {
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 2.1rem;
+    }
+  }
+}
+//page4
+.page4 {
+  .line-1 {
+    background: #bf9b30;
+    width: 83px;
+    height: 2px;
+  }
+
+  .btn-warning {
+    background-color: #bf9b30;
+    border: 2px solid #bf9b30;
+  }
+
+  .card {
+    background: rgb(0, 0, 0, 0.2);
+  }
+  .card-section .container {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .head-1 {
+    width: 16rem;
+    height: 50px;
+    background: rgb(0, 0, 0, 0.5);
+    margin: auto;
+    border-radius: 7px;
+  }
+
+  .list-1 {
+    list-style: none;
+  }
+  .list-1 li a {
+    color: white;
+    text-decoration: none;
+  }
+}
+//jobs page

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LoginNav1 = () => {
   return (
@@ -10,9 +11,9 @@ const LoginNav1 = () => {
         >
           <ul class="navbar-nav ms-auto">
             <li class="nav-item ">
-              <a class="nav-link fs-6" href="#">
+              <Link class="nav-link fs-6" to="/login">
                 LOGIN
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

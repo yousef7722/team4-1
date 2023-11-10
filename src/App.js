@@ -1,28 +1,37 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout1 from "./views/Layout1";
 import Page2 from "./pages/Page2";
+import Page3 from "./pages/Page3";
+import Page4 from "./pages/Page4";
+import Page30 from "./pages/Page30";
+import Page31 from "./pages/Page31";
+import Page32 from "./pages/Page32";
+import Page27 from "./pages/Page27";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout1/>,
+    element: <Layout1 />,
     children: [
-      { index: true, element: <Page2/> },
+      { index: true, element: <Page2 /> },
+      { path: "page3", element: <Page3 /> },
+      { path: "/PAGE4_article_ID", element: <Page4 /> },
+      { path: "page27", element: <Page27 /> },
+      { path: "page30", element: <Page30 /> },
+      { path: "/page31_job_ID", element: <Page31 /> },
+      { path: "/page32_jobid_apply", element: <Page32 /> },
       // { path: "page link here", element: <Page3/> }, غير الاليمنت و الباث
       // { path: "page link here",, element: <Page4/> }, غير الاليمنت و الباث
       // { path: "page link here",, element: <Page4/> }, غير الاليمنت و الباث
-    ]
+    ],
   },
+  { path: "/login", element: <Login /> },
 ]);
 
 const App = () => {
-  return (
-    <RouterProvider router={router} />
-  );
-}
+  return <RouterProvider router={router} />;
+};
 
 export default App;
 //import EIT from "./media/EIT.jpeg";

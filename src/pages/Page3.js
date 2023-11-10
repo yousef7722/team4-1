@@ -1,18 +1,15 @@
-import React from "react";
+import React from 'react'
 import main_background from "../media/main_background.jpg";
 import SmallArticle from "../components/SmallArticle";
 import NewsArticle from "../components/NewsArticle";
-{
-  /* صوره الخلفيه بتعملها امبورت الاول وتحطها تحت فالسورس*/
-}
 
-const Page2 = () => {
+const Page3 = () => {
   var bigText = " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderitmaiores voluptatum facere! Corrupti beatae, natus ab provident voluptatevoluptatibus neque. Eligendi accusamus aut placeat dolorum blanditiis,labore necessitatibus facere alias in doloremque velit minima aperiam.Ipsam et numquam labore fugit inventore placeat quasi, voluptas at officia"
   var smallText = bigText.slice(0, bigText.length/2)
   return (
     <>
-      <img src={main_background} className="main-overlay" />{/*الصوره اللى فالخلفيه*/}
-      
+      <img src={main_background} className="main-overlay" />{" "}
+      {/*الصوره اللى فالخلفيه*/}
       <div className="main position-relative">
         <main className="page2">
           {/* <!-- start section -1 --> */}
@@ -25,9 +22,6 @@ const Page2 = () => {
               </h1>
               <div className="d-flex  mt-5 d-flex justify-content-between home-div-row border-rounded rounded-3 pt-5">
                 <div className="position-relative w-50 px-4 ps-5">
-                  <div className="side-text" style={{width: "fit-content"}}>
-                    <h3>FEATURED NEWS</h3>
-                  </div>
                   <div className="ps-5 left-news-item">
                   <NewsArticle text={bigText}/>
                   </div>
@@ -55,6 +49,6 @@ const Page2 = () => {
       </div>
     </>
   );
-};
+}
 
-export default Page2;
+export default Page3

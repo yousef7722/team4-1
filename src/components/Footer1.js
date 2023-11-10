@@ -2,7 +2,7 @@ import React from "react";
 import seff_logo_transparent from "../media/seff_logo_transparent.png"
 const Footer1 = () => {
   return (
-    <footer class="text-white py-1 pb-4">
+    <footer class="text-white py-1 pb-4 position-relative z-3">
       <div class="footerContent container py-1">
         <div class="footerImg">
           <img
